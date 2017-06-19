@@ -1,0 +1,82 @@
+Visual Studio Code(영문OS에서?)
+
+**한글깨짐
+파일 > 기본설정 > 사용자설정
+
+//설정을 이파일에 넣어서 기본 설정을 덮어씁니다.
+{
+	"editor.fontFamily":"Consolas,맑은고딕",
+	"files.encoding":"euckr"
+	//"editor.fontSize":12
+	
+}
+
+
+**tasks.json 파일 설정.
+
+{
+    "version": "0.1.0",
+    "command": "make",
+    "isShellCommand": true,
+    "tasks": [
+        {
+            "taskName": "Makefile",
+            // Make this the default build command.
+            "isBuildCommand": true,
+            // Show the output window only if unrecognized errors occur.
+            "showOutput": "always",
+            // No args
+            "args": ["all"],
+            // Use the standard less compilation problem matcher.
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": ["relative", "${workspaceRoot}"],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        }
+    ]
+}
+
+
+**Keybindings.json 설정
+// Place your key bindings in this file to overwrite the defaults
+[
+    { "key": "f8",          "command": "workbench.action.tasks.build" }
+]
+
+
+
+****2nd solution
+{
+    "version": "0.1.0",
+    "command": "cmd",
+    "args": ["/C"],
+    "isShellCommand": true,
+    "showOutput": "always",
+    "suppressTaskName": true,
+    "tasks": [
+        {
+            "taskName": "build",
+            "args": ["gcc", "-Wall", "${relativeFile}", "-o", "${relativeFile}.exe", "-pedantic"],
+            "isBuildCommand": true
+        },
+        {
+            "taskName": "run",
+            "args": ["${relativeFile}.exe"],
+            "isTestCommand": true
+        }
+    ]
+}
+
+****기타설정한것들
+extension 설치
+cygwin-gcc/g++ 설치(사용중)
+gcc for windows 설치(사용안함)
+dev c++ 설치(VS 아니고 별도 editor(IDE))
