@@ -37,7 +37,8 @@
         {
             "name": "Win32",
             "includePath": [
-                "C:/cygwin/lib/gcc/i686-pc-cygwin/6.3.0/include/c++"
+                "C:/cygwin/lib/gcc/i686-pc-cygwin/6.3.0/include/c++",
+                "C:/cygwin/bin"
             ],
             "defines": [
                 "_DEBUG",
