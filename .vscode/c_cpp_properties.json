@@ -37,8 +37,7 @@
         {
             "name": "Win32",
             "includePath": [
-                "C:/cygwin/lib/gcc/i686-pc-cygwin/6.3.0/include/c++",
-                "C:/cygwin/bin"
+                "C:\\Program Files\\Dev-Cpp\\MinGW64\\bin","C:\\Program Files\\Dev-Cpp\\MinGW64\\lib"
             ],
             "defines": [
                 "_DEBUG",
