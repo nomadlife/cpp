@@ -1,2 +1,7 @@
 g++ -m32 ooo.cpp : 윈도우 32비트 버전으로 컴파일.
 g++ -m32 ex1.cpp ex2.cpp -o ex3.exe : 두개 파일을 하나로 컴파일. 
+
+dev cpp 실행코드 (windows)
+- C++ Compiler: C:\Program Files\Dev-Cpp\MinGW64\bin\g++.exe
+- Command: g++.exe "C:\Users\joonw\Documents\Cpp_Lecture\Book\11.operators_p43.cpp" -o "C:\Users\joonw\Documents\Cpp_Lecture\Book\11.operators_p43.exe" -m32 -I"C:\Program Files\Dev-Cpp\MinGW64\include" -I"C:\Program Files\Dev-Cpp\MinGW64\x86_64-w64-mingw32\include" -I"C:\Program Files\Dev-Cpp\MinGW64\lib\gcc\x86_64-w64-mingw32\4.9.2\include" -I"C:\Program Files\Dev-Cpp\MinGW64\lib\gcc\x86_64-w64-mingw32\4.9.2\include\c++" -L"C:\Program Files\Dev-Cpp\MinGW64\x86_64-w64-mingw32\lib32" -static-libgcc -m32
+
