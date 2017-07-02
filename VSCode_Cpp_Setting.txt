@@ -132,3 +132,49 @@ tasks.json
     "args": [""],
     "showOutput": "always"
 
+-------------------------------------
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "0.1.0",
+    "tasks":[
+        {
+            "taskName": "build",
+            "command": "g++",
+            "isShellCommand": true,
+            "windows":{
+                "args": ["-m32","${file}"],
+
+                "command": "a.exe",
+                "isShellCommand": true,
+                "args": [],
+                "showOutput": "always"
+                },
+            "linux":{
+                "args": ["${file}"],
+
+                "command": "./a.out",
+                "isShellCommand": true,
+                "args": [],
+                "showOutput": "always"
+                },
+            "osx":{
+                "args": ["${file}"],
+
+                "command": "./a.out",
+                "isShellCommand": true,
+                "args": [],
+                "showOutput": "always"
+                },
+            "showOutput": "always"
+        },
+        {
+            "taskName":"run",
+            "command": "a.out",
+            "isShellCommand": true,
+            "args": [""],
+            "showOutput": "always"
+        }
+    ]
+}
+
