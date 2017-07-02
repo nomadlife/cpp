@@ -12,14 +12,11 @@
             "echoCommand": true
         },
         {    
-            "taskName": "run1",
+            "taskName": "runTask1",
             "command": "./a.out",
             "isShellCommand": true,
             "args": [],
             "showOutput": "always"
         }
     ]
-
-
-
 }
