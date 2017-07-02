@@ -94,3 +94,41 @@ c_cpp_properties.json
         }
     ]
 }
+
+=============================================
+(Ubuntu)setting : Compile and Display
+
+tasks.json
+{
+    "version": "0.1.0",
+    "command": "g++",
+    "isShellCommand": true,
+    "args": ["${file}","-o","${file}.out"],
+    "showOutput": "always",
+
+    "command": "${file}.out",
+    "isShellCommand": true,
+    "args": [""],
+    "showOutput": "always"
+}
+
+------------------------------ depends on OS
+    "version": "0.1.0",
+    "command": "g++",
+    "isShellCommand": true,
+    "windows":{
+        "args": ["-m32","${file}"]
+        },
+    "linux":{
+        "args": ["${file}"]
+        },
+    "osx":{
+        "args": ["${file}"]
+        },
+    "showOutput": "always",
+
+    "command": "a.out",
+    "isShellCommand": true,
+    "args": [""],
+    "showOutput": "always"
+
