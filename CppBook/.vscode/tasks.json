@@ -10,7 +10,7 @@
         "echoCommand": true
     },
     "windows": {
-        "args": ["-m32 ${relativeFile} & a.out"],
+        "args": ["-m32 ${relativeFile} & a.exe"],
         "showOutput": "always",
         "echoCommand": true
     },
