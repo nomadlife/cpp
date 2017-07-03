@@ -225,5 +225,46 @@ tasks.json
     }
   ]
 }
+-------------------------------------
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "0.1.0",
+
+    "tasks": [
+        {   
+            "taskName":"build",
+            "linux": {
+                "command": "g++",
+                "isShellCommand": true,
+                "args": ["${file} && ./a.out"],
+                "showOutput": "always",
+                "echoCommand": true
+            }
+        },   
+        {    
+            "taskName": "run",
+            "command": "./a.out",
+            "isShellCommand": true,
+            "args": [],
+            "showOutput": "always"
+        }
+    ]
+}
+
+-----------------------------------------------
+succeed
+
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "command": "g++",
+    "isShellCommand": true,
+    "args": ["${relativeFile} && ./a.out"],
+    "showOutput": "always",
+    "echoCommand": true
+}
+
 
 
