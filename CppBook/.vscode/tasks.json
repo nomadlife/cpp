@@ -9,13 +9,13 @@
         "showOutput": "always",
         "echoCommand": true
     },
-    "windows": {
-        "args": ["-m32 ${relativeFile} & a.exe"],
+        "osx": {
+        "args": ["${relativeFile} && ./a.out"],
         "showOutput": "always",
         "echoCommand": true
     },
-    "osx": {
-        "args": ["${relativeFile} && ./a.out"],
+    "windows": {
+        "args": ["-m32 ${relativeFile} ; ./a.exe"],
         "showOutput": "always",
         "echoCommand": true
     }
