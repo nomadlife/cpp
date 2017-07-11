@@ -1,5 +1,5 @@
-//Pointer Comparisons
-//p123
+//Pointers vs Arrays
+//p124
 
 #include <iostream>
 using namespace std;
@@ -12,8 +12,7 @@ int main ()
 
     // let us have array address in pointer.
     ptr = var;
-    int i=0;
-    while (ptr <= &var[MAX-1])
+    for (int i=0; i<MAX; i++)
     {
         cout << "Address of var[" << i << "] = ";
         cout << ptr << endl;
@@ -23,7 +22,6 @@ int main ()
 
         // point to the next location
         ptr++;
-        i++;
     }
     
     return 0;
