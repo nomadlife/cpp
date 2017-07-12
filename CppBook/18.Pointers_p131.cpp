@@ -1,4 +1,5 @@
-// function which can accept a pointer, can also accept an array as shown in
+// function which can accept a pointer, 
+// can also accept an array as shown in
 // the following example:
 // p131
 
