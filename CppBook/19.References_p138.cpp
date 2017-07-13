@@ -24,6 +24,9 @@ int main ()
         cout << vals[i] << endl;
     }
     
+    setValue(1) = 20.33; //change 2nd element
+    setValue(3) = 70.8;  //change 4th element
+
     cout << "Value after change" <<endl;
     for (int i=0; i<5; i++)
     {

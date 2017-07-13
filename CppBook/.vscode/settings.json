@@ -3,6 +3,25 @@
         "ctime": "cpp",
         "*.tcc": "cpp",
         "iostream": "cpp",
-        "streambuf": "cpp"
+        "streambuf": "cpp",
+        "iosfwd": "cpp",
+        "cctype": "cpp",
+        "clocale": "cpp",
+        "cmath": "cpp",
+        "cstdarg": "cpp",
+        "cstddef": "cpp",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "cstring": "cpp",
+        "cwchar": "cpp",
+        "cwctype": "cpp",
+        "exception": "cpp",
+        "iomanip": "cpp",
+        "istream": "cpp",
+        "limits": "cpp",
+        "memory": "cpp",
+        "new": "cpp",
+        "ostream": "cpp",
+        "typeinfo": "cpp"
     }
 }
