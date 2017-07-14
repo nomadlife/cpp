@@ -26,35 +26,16 @@ int main ()
     //box 2 specification
     Box2.height = 10.0;
     Box2.length = 12.0;
-    // =====================
-    Box2.breadth
+    Box2.breadth  = 13.0;
 
-    //book 1 specification
-    strcpy( Book1.title, "Learn c++ /programming");
-    strcpy( Book1.author, "Chand Miyan");
-    strcpy( Book1.subject, "C++ Programming");
-    Book1.book_id = 6495407;
+    //volume of box1
+    volume = Box1.height * Box1.length * Box1.breadth;
+    cout << "Volume of Box1 : " << volume << endl;
 
-    //book 2 specification
-    strcpy( Book2.title, "Telecom Biling");
-    strcpy( Book2.author, "Yakit Singha");
-    strcpy( Book2.subject, "Telecom");
-    Book2.book_id=6495700;
-
-    //print Book1 ifo
-    printBook( &Book1);
-
-    //Print Book2 info
-    printBook( &Book2);
-
+    //volume of box 2
+    volume = Box2.height * Box2.length * Box2.breadth;
+    cout << "Volume of Box2 : " << volume << endl;
+    
     return 0;
-}
-
-void printBook(struct Books *book)
-{
-    cout << "Book title :" << book->title << endl;
-    cout << "Book author :" << book->author << endl;
-    cout << "Book subject :" << book->subject << endl;
-    cout << "Book is :" << book->book_id << endl;
 }
 
