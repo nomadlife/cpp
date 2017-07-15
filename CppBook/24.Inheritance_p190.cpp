@@ -1,8 +1,9 @@
-// Static Function Members
+// Base & Derived Classes
 
 #include <iostream>
 using namespace std;
 
+// Base class
 class Box
 {
     public:
