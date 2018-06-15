@@ -3,7 +3,7 @@
 	Standard Style Hello World!!	
 */
 
-#include <iostream.h>
+#include <iostream>
 
 int main(void)
 {
