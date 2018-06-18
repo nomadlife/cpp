@@ -21,6 +21,14 @@ Line::Line(double len):length(len)
     cout << "Object is being created, elngth =" << len << endl;
 }
 
+// equal syntax
+// Line::Line( double len)
+// {
+// cout << "Object is being created, length = " << len << endl;
+// length = len;
+// }
+
+
 //Member function definitions including consturctor
 void Line::setLength( double len)
 {

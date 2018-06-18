@@ -1,4 +1,4 @@
-// Copy Constructor
+// Copy Constructor, before use copy constructor
 
 #include <iostream>
 using namespace std;

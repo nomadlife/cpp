@@ -1,8 +1,9 @@
-// Inline Functions
+// Inline Functions, ?? 
 
 #include <iostream>
 using namespace std;
 
+//inline function
 inline int Max(int x, int y)
 {
     return (x>y)? x:y;
