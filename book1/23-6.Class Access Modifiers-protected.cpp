@@ -1,5 +1,4 @@
-// Class Access Modifiers :: The Protected Members
-
+// Class Access Modifiers - The Protected Members
 
 #include <iostream>
 using namespace std;

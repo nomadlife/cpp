@@ -1,5 +1,4 @@
-// Class Access Modifiers :: The Public Members
-// p164
+// Class Access Modifiers, The Public Members
 
 #include <iostream>
 
@@ -7,6 +6,7 @@ using namespace std;
 
 class Line
 {
+    // public members
     public:
         double length; 
         void setLength( double len );
@@ -14,7 +14,6 @@ class Line
         
 };
 
-//member function definition
 double Line::getLength(void)
 {
     return length;
@@ -29,7 +28,7 @@ int main ()
 {
     Line line;
 
-    // set line length
+    // set line length with member function
     line.setLength(6.0);
     cout << "Lenth of line :" << line.getLength() << endl;
 

@@ -1,6 +1,5 @@
 // Constructor & Destructor
 
-
 #include <iostream>
 using namespace std;
 

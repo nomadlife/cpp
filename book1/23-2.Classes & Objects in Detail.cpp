@@ -1,5 +1,5 @@
 // Classes & Objects in Detail
-// p159
+
 #include <iostream>
 using namespace std;
 

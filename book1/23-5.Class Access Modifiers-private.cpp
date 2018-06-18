@@ -1,5 +1,4 @@
-// Class Access Modifiers :: The Public Members
-// p166
+// Class Access Modifiers - The Private Members
 /* Practically, we define data in private section and
     functions in public section so that they can be
     called from outside of the class as shown in the

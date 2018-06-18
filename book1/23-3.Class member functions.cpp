@@ -1,5 +1,4 @@
 // Class member functions
-// p161
 
 #include <iostream>
 
