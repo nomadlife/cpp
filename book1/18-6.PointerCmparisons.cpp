@@ -1,5 +1,4 @@
 //Pointer Comparisons
-//p123
 
 #include <iostream>
 using namespace std;
