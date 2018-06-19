@@ -4,9 +4,12 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "test",
+            "label": "take1",
             "type": "shell",
-            "command": "g++ -g ${file} | ${workspaceFolder}\\a",
+            "command": "g++ -g \"${file}\"",
+            "windows": {
+                "command": "g++ \"${file}\" && a.exe"
+            },
             "group": {
                 "kind": "build",
                 "isDefault": true
