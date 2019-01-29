@@ -1,0 +1,39 @@
+// Class Access Modifiers - The Protected Members
+
+#include <iostream>
+using namespace std;
+
+class Box
+{
+  protected:
+    double width;
+};
+
+class SmallBox : Box // derived class from Box class.
+{
+  public:
+    void setSmallWidth(double wid);
+    double getSmallWidth(void);
+};
+
+//member function definition
+double SmallBox::getSmallWidth(void)
+{
+    return width;
+}
+
+void SmallBox::setSmallWidth(double wid)
+{
+    width = wid;
+}
+
+int main()
+{
+    SmallBox box;
+
+    // set box width using member function
+    box.setSmallWidth(5.0);
+    cout << "Width of box :" << box.getSmallWidth() << endl;
+
+    return 0;
+}
