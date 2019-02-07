@@ -9,15 +9,15 @@ int main()
             if(i % 3 == 0)
             {
                  Divided = Divided + i;
-                 cout<<i <<": is dividable\n";
+                 // cout<<i <<": is dividable\n";
             }
             else if(i % 5 == 0)
             {
                  Divided = Divided + i;
-                 cout<<i <<": is dividable\n";
+                 // cout<<i <<": is dividable\n";
             }
     }
-    cout<<"Sum: " <<Divided;
-    cin.get();
+    cout<<"Sum: " << Divided << endl;
+    // cin.get();
     return 0;
 }

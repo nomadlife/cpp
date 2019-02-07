@@ -20,6 +20,6 @@ int main()
         }
     }
     cout << summa << "\n";
-    system("PAUSE");	
+    // system("PAUSE");	
     return 0;
 }
